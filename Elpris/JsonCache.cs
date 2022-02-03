@@ -26,7 +26,7 @@ namespace Elpris
 
         public static string GetFilename()
         {
-            return $"elpris{new DateOnly():MM-dd-yy}.json";
+            return $"elpris{DateOnly.FromDateTime(DateTime.Now):MM-dd-yy}.json";
         }
 
         /// <summary>
